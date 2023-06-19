@@ -2,7 +2,7 @@
 
 Scripts for passing a single GPU from a Linux host to a Windows VM and back.
 
-1. Change the VM name in qemu if not already win10
+1. Prefix the VM name with 'vfio' if you want to enable single GPU passthrough when you start it.
 2. Run the install_hooks.sh script as root
 
 Note the PCI ids and display manager should be detected automatically. If you are using an unsupported display manager that is not listed in the hooks/vfio-startup.sh script, feel free to contact us on the Discord server and we shall add your display manager.
